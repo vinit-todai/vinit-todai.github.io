@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<style>
+.w3-tangerine {
+  font-family: 'Tangerine', serif;
+}
+body {
+       background-image: url("blaah.jpg");
+	       background-repeat: no-repeat;
+		       background-size: 100%;
+
+
+}
+h3{color:white;}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ffc266;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  width: 170px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+
+<body>
+<div class="w3-top w3-hide-small w3-tangerine">
+  <div class="w3-bar w3-xlarge w3-red w3-opacity w3-hover-opacity-off w3-tangerine" id="myNavbar">
+    <a href="Home Page.php" class="w3-bar-item w3-button w3-xxlarge w3-hover-grey">Home</a>
+	<a href="user_login_form.html" class="w3-bar-item w3-button w3-xxlarge w3-hover-grey">Sign up or login</a>
+    <a href="restraunt_login_form.html" class="w3-bar-item w3-button w3-xxlarge w3-hover-grey">Restraunt Login/Registration</a>
+  </div>
+</div>
+<form action="remove_item.php" method="post">
+<div class="w3-white-space w3-xlarge w3-font-red ">
+<h1 class="w3-tangerine w3-text-black w3-animate" style="color:#ffc266;text-align:center;font-size:300%; margin-top:70px"> Remove Food Item </h1> <br>
+</div>
+<span class="w3-tangerine w3-xxxlarge" style="color:#ffc266; font-size:30px; margin-left:150px ; ">Item Name :</span><input class="w3-input w3-animate-input w3-hover-black" style="width:100px; margin-left:150px" type="text" name="item_name" />
+<br>
+<button class="button w3-tangerine w3-xxlarge w3-ripple" style="vertical-align:middle; margin-left:150px; margin-top:20px;"><span>Submit</span></button>
+</body>
+</html> 
